@@ -1,0 +1,45 @@
+{
+  "name": "serverless-boilerplate",
+  "version": "1.0.0-rc.2",
+  "engines": {
+    "node": ">=4.0"
+  },
+  "preferGlobal": true,
+  "description": "Serverless Boilerplate",
+  "author": "serverless.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eahefnawy/serverless-boilerplate"
+  },
+  "main": "lib/Serverless.js",
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "chai": "^3.5.0",
+    "nyc": "^8.3.1",
+    "xo": "^0.16.0"
+  },
+  "dependencies": {},
+  "scripts": {
+    "test": "xo && nyc ava",
+    "lambda": "node .lambda/run"
+  },
+  "ava": {
+    "files": ["test.js"],
+    "concurrency": 5,
+    "failFast": true
+  },
+  "xo": {
+    "esnext": true,
+    "space": true
+  },
+  "nyc": {
+    "include": ["lib"],
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "cache": true,
+    "all": true
+  }
+}

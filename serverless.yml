@@ -1,0 +1,7 @@
+service: serverless-boilerplate
+
+provider: aws
+
+functions:
+  hello:
+    handler: functions.hello

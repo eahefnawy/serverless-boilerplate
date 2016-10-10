@@ -1,0 +1,11 @@
+{
+  "awsRequestId": "xxx",
+  "invokeid": "xxx",
+  "logGroupName": "/aws/lambda/local-lambda",
+  "memoryLimitInMB": "1024",
+  "functionName": "local-lambda",
+  "functionVersion": "v1",
+  "invokedFunctionArn": "arn:xxx",
+  "identity": null,
+  "clientContext": null
+}

@@ -1,0 +1,36 @@
+{
+  "Records": [
+    {
+      "eventID": "50204b3941c11bacb80b7db0e8b783a5",
+      "eventName": "MODIFY",
+      "eventVersion": "1.1",
+      "eventSource": "aws:dynamodb",
+      "awsRegion": "us-east-1",
+      "dynamodb": {
+        "ApproximateCreationDateTime": 1475580840,
+        "Keys": {
+          "first": {
+            "S": "eslam"
+          }
+        },
+        "NewImage": {
+          "last": {
+            "S": "hefnawy"
+          },
+          "first": {
+            "S": "eslam"
+          }
+        },
+        "OldImage": {
+          "first": {
+            "S": "eslam"
+          }
+        },
+        "SequenceNumber": "3300000000000436625496",
+        "SizeBytes": 41,
+        "StreamViewType": "NEW_AND_OLD_IMAGES"
+      },
+      "eventSourceARN": "arn:aws:dynamodb:us-east-1:123456789:table/stream/stream/2016-10-04T11:32:32.765"
+    }
+  ]
+}
